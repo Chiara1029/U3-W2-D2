@@ -10,7 +10,7 @@ import { InactivePostsComponent } from './components/inactive-posts/inactive-pos
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Route[] = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'active-posts', component: ActivePostsComponent },
   { path: 'inactive-posts', component: InactivePostsComponent },
 ];
