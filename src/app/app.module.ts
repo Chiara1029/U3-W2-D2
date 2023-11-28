@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ActivePostsComponent } from './components/active-posts/active-posts.component';
 import { InactivePostsComponent } from './components/inactive-posts/inactive-posts.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Route[] = [
-  { path: ' ', component: NavbarComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'active-posts', component: ActivePostsComponent },
   { path: 'inactive-posts', component: InactivePostsComponent },
 ];
@@ -20,6 +21,7 @@ const routes: Route[] = [
     NavbarComponent,
     ActivePostsComponent,
     InactivePostsComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
   providers: [],
